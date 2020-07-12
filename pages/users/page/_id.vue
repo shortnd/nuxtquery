@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>All Users Page {{ users[0].id }}</h1>
+      <h1>All Users Page {{ id }}</h1>
       <ul>
           <li v-for="user in users" :key="user.id">
               <nuxt-link :to="`/users/${user.id}`">{{ user.email  }}</nuxt-link>
